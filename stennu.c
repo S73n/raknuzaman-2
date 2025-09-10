@@ -184,7 +184,7 @@ int main()
     printf("Corresponding lowercase characters: %c", c+32);
 }*/
 
-#include <stdio.h>
+/*#include <stdio.h>
 
 int main()
 {
@@ -198,6 +198,34 @@ int main()
     printf("Area of the triangle is: %.2f\n", area);
 
     return 0;
+}*/
+
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    float a, b, c;
+    float calc;
+    float calc2;
+
+    printf("Enter the three values: ");
+    scanf("%f %f %f", &a, &b, &c);
+
+    float D = (b*b-4*a*c);
+
+    if (D < 0) {
+        printf("D on väiksem, kui 0, kalkulatsiooni ei saa teha");
+    }
+
+    calc = ((-b+sqrt(D))/2*a);
+    calc2 = ((-b-sqrt(D))/2*a);
+
+    printf("x1 = %f\n", calc);
+    printf("x2 = %f\n", calc2);
+
+    return 1;
 }
+
 
 
