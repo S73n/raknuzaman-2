@@ -140,7 +140,7 @@ int main()
     printf("size of character: %d bytes", sizeof(c));
 }*/
 
-#include <stdio.h>
+/*#include <stdio.h>
 
 int main()
 {
@@ -149,8 +149,55 @@ int main()
     scanf("%d", & number);
 
     printf("Corresponding ascii character: %c", number);
+}*/
+
+/*#include <stdio.h>
+
+int main()
+{
+    int number;
+    printf("enter your ascii value: ");
+    scanf("%c", & number);
+
+    printf("Corresponding ascii values: %d", number);
+}*/
+
+/*#include <stdio.h>
+
+int main()
+{
+    char c;
+    printf("enter your lowercase character: ");
+    scanf("%c", & c);
+
+    printf("Corresponding uppercase characters: %c", c-32);
+}*/
+
+/*#include <stdio.h>
+
+int main()
+{
+    char c;
+    printf("enter your uppercase character: ");
+    scanf("%c", & c);
+
+    printf("Corresponding lowercase characters: %c", c+32);
+}*/
+
+#include <stdio.h>
+
+int main()
+{
+    float h, w, area;
+
+    printf("Enter height and width of a triangle: ");
+    scanf("%f %f", &h, &w);
+
+    area = 0.5 * h * w;
+
+    printf("Area of the triangle is: %.2f\n", area);
+
+    return 0;
 }
-
-
 
 
