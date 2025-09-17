@@ -324,7 +324,7 @@ int main() {
     }
 }*/
 
-#include<stdio.h>
+/*#include<stdio.h>
 #include<math.h>
 
 int main() {
@@ -348,5 +348,33 @@ int main() {
     } else {
         printf("No roots.");
     }
+}*/
+
+#include <stdio.h>
+
+int main() {
+    double ek, ik, math, average;
+
+    printf("Sisesta eesti keele tulemus: ");
+    scanf("%lf", &ek);
+
+    printf("Sisesta inglise keele tulemus: ");
+    scanf("%lf", &ik);
+
+    printf("Sisesta matemaatika tulemus: ");
+    scanf("%lf", &math);
+
+    average = (ek + ik + math) / 3;
+
+    if (average >= 90) {
+        printf("Keskmine hinne: A");
+    } else if (average >= 80) {
+        printf("Keskmine hinne: B");
+    } else if (average >= 70) {
+        printf("Keskmine hinne; C");
+    } else {
+        printf("Keskmine hinne: F");
+    }
 }
+
 
