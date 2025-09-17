@@ -200,7 +200,7 @@ int main()
     return 0;
 }*/
 
-#include <stdio.h>
+/*#include <stdio.h>
 #include <math.h>
 
 int main()
@@ -225,7 +225,54 @@ int main()
     printf("x2 = %f\n", calc2);
 
     return 1;
+}*/
+
+
+/*#include<stdio.h>
+
+int main() {
+    int num;
+    printf("Enter your number: ");
+    scanf("%d", &num);
+
+    if (num %2 == 0) {
+        printf("Even number: ");
+    } else {
+        printf("Odd number: ");
+    }
+})*/
+
+/*#include<stdio.h>
+
+int main() {
+    int year;
+    printf("Enter your Year: ");
+    scanf("%d", &year);
+
+    if (year % 400 == 0) {
+        printf("%d is a leap year", year);
+    } else if (year % 100 == 0) {
+        printf("%d is not a leap year", year);
+    } else if (year % 4 == 0) {
+        printf("%d is a leap year", year);
+    } else {
+        printf("%d is not a leap year", year);
+    }
+}*/
+
+
+#include<stdio.h>
+
+int main() {
+    int a, b, c;
+    printf("Enter your three numbers: ");
+    scanf("%d %d %d", &a, &b, &c);
+
+    if (a > b && a > c) {
+        printf("%d is largest",a);
+    } else if (b > a && b > c) {
+        printf("%d is largest",b);
+    } else {
+        printf("%d is largest",c);
+    }
 }
-
-
-
