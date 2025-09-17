@@ -299,7 +299,7 @@ int main() {
     }
 }*/
 
-#include<stdio.h>
+/*#include<stdio.h>
 
 int main() {
     float kwh, bill;
@@ -321,6 +321,32 @@ int main() {
     } else {
         bill = 100 * 0.5 + (200 - 100) * 0.6 + (400 - 300) * 0.7 + (kwh - 300) * 0.8;
         printf("Your bill %f",bill);
+    }
+}*/
+
+#include<stdio.h>
+#include<math.h>
+
+int main() {
+    double a, b, c, x1, x2, d;
+
+    printf("Enter a b c: ");
+    scanf("%lf %lf %lf", &a, &b, &c);
+
+    d = b * b - 4 * a * c;
+
+    if(d > 0) {
+        x1 = (-b + sqrt(d)) / (2 * a);
+        x2 = (-b - sqrt(d)) / (2 * a);
+        printf("x1 = %.2f\n", x1);
+        printf("x2 = %.2f\n", x2);
+    } else if (d==0) {
+        x1 = -b / (2 * a);
+        x2 = -b / (2 * a);
+        printf("x1 = %.2f\n", x1);
+        printf("x2 = %.2f\n", x2);
+    } else {
+        printf("No roots.");
     }
 }
 
