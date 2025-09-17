@@ -261,7 +261,7 @@ int main() {
 }*/
 
 
-#include<stdio.h>
+/*#include<stdio.h>
 
 int main() {
     int a, b, c;
@@ -275,4 +275,52 @@ int main() {
     } else {
         printf("%d is largest",c);
     }
+}*/
+
+/*#include<stdio.h>
+
+int main() {
+    float income, tax;
+    printf("Enter your income: ");
+    scanf("%f", &income);
+
+    if(income < 10000) {
+        tax = 0;
+        printf("Your income tax %f",tax);
+    } else if (income < 20000) {
+        tax = (income - 10000) * 0.15;
+        printf("Your income tax %f",tax);
+    } else if (income < 30000) {
+        tax = (20000 - 10000) * 0.15 + (income - 20000) * 0.25;
+        printf("Your income tax %f",tax);
+    } else {
+        tax = (20000 - 10000) * 0.15 + (30000 - 20000) * 0.25 + (income-30000) * 0.3;
+        printf("Your income tax %f",tax);
+    }
+}*/
+
+#include<stdio.h>
+
+int main() {
+    float kwh, bill;
+    printf("Enter your kwh: ");
+    scanf("%f", &kwh);
+
+    if (kwh < 100) {
+        bill = kwh * 0.5;
+        printf("Your bill %f",bill);
+
+    } else if (kwh < 200) {
+        bill = 100 * 0.5 + (kwh - 100) * 0.6;
+        printf("our bill %f",bill);
+
+    } else if (kwh < 300) {
+        bill = 100 * 0.5 + (200 - 100) * 0.6 + (kwh - 300) * 0.7;
+        printf("Your bill %f",bill);
+
+    } else {
+        bill = 100 * 0.5 + (200 - 100) * 0.6 + (400 - 300) * 0.7 + (kwh - 300) * 0.8;
+        printf("Your bill %f",bill);
+    }
 }
+
