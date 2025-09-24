@@ -350,7 +350,7 @@ int main() {
     }
 }*/
 
-#include <stdio.h>
+/*#include <stdio.h>
 
 int main() {
     double ek, ik, math, average;
@@ -375,6 +375,71 @@ int main() {
     } else {
         printf("Keskmine hinne: F");
     }
-}
+}*/
 
+/*#include <stdio.h>
 
+int main() {
+    float weight, height, bmi;
+    printf("Enter your weight (kg): ");
+    scanf("%f", &weight);
+    printf("Enter your height (m): ");
+    scanf("%f", &height);
+
+    bmi = weight/(height*height);
+
+    if (bmi < 18.5) {
+        printf("Underweight");
+    } else if (bmi > 18.5 && bmi < 25) {
+        printf("Normal weight");
+    } else if (bmi > 25 && bmi < 30) {
+        printf("Overweight");
+    } else {
+        printf("Obese");
+    }
+}*/
+
+/*#include <stdio.h>
+
+int main() {
+    float withdraw, deposit, balance = 1000.0;
+    int pin = 123456, entered_pin, choice;
+
+    printf("Enter your pin (6 char): ");
+    scanf("%d", &entered_pin);
+
+    if (pin == entered_pin) {
+        printf("Select operation:\n");
+        printf("1. Withdraw\n");
+        printf("2. Deposit\n");
+        printf("Enter your choice (1 or 2): ");
+        scanf("%d", &choice);
+
+        if (choice == 1) {
+            printf("Enter amount to withdraw: ");
+            scanf("%f", &withdraw);
+
+            if (withdraw > 0 && withdraw <= balance) {
+                balance -= withdraw;
+                printf("You withdrew %.2f euros. New balance: %.2f euros\n", withdraw, balance);
+            } else {
+                printf("Insufficient balance or invalid amount.\n");
+            }
+        } else if (choice == 2) {
+            printf("Enter amount to deposit: ");
+            scanf("%f", &deposit);
+
+            if (deposit > 0) {
+                balance += deposit;
+                printf("You deposited %.2f euros. New balance: %.2f euros\n", deposit, balance);
+            } else {
+                printf("Invalid deposit amount.\n");
+            }
+        } else {
+            printf("Invalid choice.\n");
+        }
+
+    } else {
+        printf("Incorrect pin\n");
+    }
+}*/
