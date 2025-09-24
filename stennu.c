@@ -503,3 +503,50 @@ int main() {
         printf("Wrong input");
     }
 }*/
+
+/*#include <stdio.h>
+int main() {
+    int choice;
+
+    printf("Enter choice (1: Triangle, 2: Rectangle, 3: Ring, 4: Trapezium): ");
+    scanf("%d", &choice);
+
+    if (choice == 1) {
+        float b, h, s1, s2, s3;
+        printf("Enter base and height: ");
+        scanf("%f %f", &b, &h);
+        printf("Area: %f\n", 0.5 * b * h);
+        printf("Enter three sides: ");
+        scanf("%f %f %f", &s1, &s2, &s3);
+        printf("Perimeter: %f\n", s1 + s2 + s3);
+
+    } else if (choice == 2) {
+        float l, w;
+        printf("Enter length and width: ");
+        scanf("%f %f", &l, &w);
+        printf("Area: %f\n", l * w);
+        printf("Perimeter: %f\n", 2 * (l + w));
+
+    } else if (choice == 3) {
+        float R, r;
+        printf("Enter outer and inner radius: ");
+        scanf("%f %f", &R, &r);
+        printf("Area: %f\n", 3.14159 * (R*R - r*r));
+        printf("Perimeter: %f\n", 2 * 3.14159 * (R + r));
+
+    } else if (choice == 4) {
+        float b1, b2, h, s1, s2;
+        printf("Enter two bases and height: ");
+        scanf("%f %f %f", &b1, &b2, &h);
+        printf("Area: %f\n", 0.5 * (b1 + b2) * h);
+        printf("Enter two sides: ");
+        scanf("%f %f", &s1, &s2);
+        printf("Perimeter: %f\n", b1 + b2 + s1 + s2);
+
+    } else {
+        printf("Invalid choice\n");
+    }
+
+    return 0;
+}*/
+
