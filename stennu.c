@@ -443,3 +443,29 @@ int main() {
         printf("Incorrect pin\n");
     }
 }*/
+
+
+/*#include <stdio.h>
+int main() {
+    int a, b, c;
+
+    printf("Enter a: ");
+    scanf("%d", &a);
+    printf("Enter b: ");
+    scanf("%d", &b);
+    printf("Enter c: ");
+    scanf("%d", &c);
+
+    if (a + b > c && b + c > a && c + a > b) {
+        if (a == b && b == c) {
+            printf("Võrdkülgne kolmnurk\n");
+        } else if (a == b || b == c || a == c) {
+            printf("Võrdhaarne kolmnurk\n");
+        } else {
+            printf("Erikülgne kolmnurk\n");
+        }
+    } else {
+        printf("Ei saa kolmnurka teha\n");
+    }
+}*/
+
