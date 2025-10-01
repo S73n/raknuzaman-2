@@ -550,3 +550,100 @@ int main() {
     return 0;
 }*/
 
+#include <stdio.h>
+#include <stdbool.h>
+
+int main() {
+    int age, health_issues, smoking, dangerous_job, alcohol;
+    float bmi, premium = 0;
+    char gender, family_history;
+
+    printf("Enter your age: ");
+    scanf("%d", &age);
+
+    printf("Enter your gender(M/F): ");
+    scanf(" %c", &gender);
+
+    printf("Enter your BMI: ");
+    scanf("%f", &bmi);
+
+    printf("Enter number of health issues (0-10): ");
+    scanf("%d", &health_issues);
+
+    printf("Smoking (0-never 1-former 2-current): ");
+    scanf("%d", &smoking);
+
+    printf("Alcohol (0-never 1-occasional 2-regular): ");
+    scanf("%d", &alcohol);
+
+    printf("Family history of chronic diseases? (Y/N): ");
+    scanf(" %c", &family_history);
+
+    printf("Dangerous job (0-no 1-moderate 2-high risk): ");
+    scanf("%d", &dangerous_job);
+
+    // base premium
+    if (age < 25) {
+        premium = 100;
+    } else if (age < 40) {
+        premium = 150;
+    } else if (age < 55) {
+        premium = 175;
+    } else {
+        premium = 200;
+    }
+
+    // gender adjustment
+    if (gender == 'F' || gender == 'f') {
+        premium *= 0.9;
+    }
+
+    // bmi adjustment
+    if (bmi < 18.5) {
+        premium *= 1.1;
+    } else if (bmi > 25 && bmi < 30) {
+        premium *= 1.2;
+    } else if (bmi > 30) {
+        premium *= 1.4;
+    }
+
+    // health issues
+    if (health_issues > 0) {
+        premium *= 1.1;
+    }
+
+    //life style factors
+    //smoking
+
+    if (smoking == 2) {
+        premium *= 1.4;
+    } else if (smoking == 1) {
+        premium *= 1.1;
+    }
+
+    //alcohol
+    if (alcohol == 2) {
+        premium *= 1.4;
+    } else if (alcohol == 1) {
+        premium *= 1.2;
+    }
+
+    //family history
+    if (family_history == 'Y' || family_history == 'y') {
+        premium *= 1.1;
+    }
+
+    //dangerous job
+    if (dangerous_job == 2) {
+        premium = 2.0;
+    } else if (dangerous_job == 1) {
+        premium = 1.5;
+    }
+
+    //print annual life insurance
+    printf("Annual life insurance calculation \n");
+    printf("Annual life insurance %.2f\n", premium);
+    printf("Annual life insurance %.2f\n", premium/12);
+
+return 0;
+}
