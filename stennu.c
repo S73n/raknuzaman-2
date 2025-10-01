@@ -550,7 +550,7 @@ int main() {
     return 0;
 }*/
 
-#include <stdio.h>
+/*#include <stdio.h>
 #include <stdbool.h>
 
 int main() {
@@ -646,4 +646,73 @@ int main() {
     printf("Annual life insurance %.2f\n", premium/12);
 
 return 0;
+}*/
+
+/*#include <stdio.h>
+#include<time.h>
+
+int main() {
+    int hour, green_time, vehicle_count, emergency_vehicle;
+    char weather_condition;
+
+    printf("Enter your hour (0-23): ");
+    scanf("%d", &hour);
+
+    printf("Enter vehicle count (0-100): ");
+    scanf("%d", &vehicle_count);
+
+    printf("Enter weather condition (s-sunny r-rainy f-foggy): ");
+    scanf(" %c", &weather_condition);
+
+    printf("Enter emergency vehicle (0-no 1-approaching): ");
+    scanf("%d", &emergency_vehicle);
+
+    //rush hours
+if (hour > 6 && hour < 9) {
+    // Morning rush hour
+    if (vehicle_count > 50) {
+        green_time = 50;
+    } else if (vehicle_count > 30) {
+        green_time = 40;
+    } else {
+        green_time = 30;
+    }
+} else if (hour > 16 && hour < 19) {
+    // Evening rush hour
+    if (vehicle_count > 60) {
+        green_time = 70;
+    } else if (vehicle_count > 45) {
+        green_time = 45;
+    } else {
+        green_time = 20;
+    }
+} else if (hour > 22 || hour < 5) {
+    // Late night
+    if (vehicle_count > 10) {
+        green_time = 30;
+    } else {
+        green_time = 20;
+    }
+} else {
+    // Default or non-peak hours
+    if (vehicle_count > 40) {
+        green_time = 35;
+    } else {
+        green_time = 25;
+    }
 }
+
+    if (weather_condition == 'F' || weather_condition == 'f'){
+        green_time+=20;
+    } else if (weather_condition == 'R' || weather_condition == 'r') {
+        green_time+=120;
+    }
+
+    printf("Traffic light settings: \n");
+    printf("Green light %d seconds \n", green_time);
+    printf("Red light %d seconds \n", green_time*2);
+    printf("Yellow light 5 seconds \n");
+
+
+return 0;
+}*/
