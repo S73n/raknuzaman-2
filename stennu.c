@@ -713,6 +713,47 @@ if (hour > 6 && hour < 9) {
     printf("Red light %d seconds \n", green_time*2);
     printf("Yellow light 5 seconds \n");
 
+return 0;
+}*/
+
+/*#include <stdio.h>
+int main() {
+    int num, sum = 0, rem;
+    printf("Enter your number: ");
+    scanf("%d", &num);
+
+    while(num != 0) {
+        rem = num %10;
+        sum = sum + rem;
+        num= num /10;
+    }
+    printf("Sum of digits: %d", sum);
 
 return 0;
 }*/
+
+/*#include <stdio.h>
+int main() {
+    int num, rem, temp, count=0;
+    printf("Enter your number: ");
+    scanf("%d", &num);
+    temp = num;
+
+    while(temp != 0) {
+        rem = temp % 10;
+        if(rem == 0) {
+            count++;
+        }
+        temp = temp / 10;
+    }
+    printf("Original number: %d\n", num);
+    printf("Number of zeroes: %d\n", count);
+
+    if (count > 0) {
+        printf("Duck number: ");
+    } else {
+        printf("Not a duck number: ");
+    }
+    return 0;
+}*/
+
