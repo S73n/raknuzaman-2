@@ -757,3 +757,49 @@ int main() {
     return 0;
 }*/
 
+/*#include <stdio.h>
+
+int main() {
+    int i, sum = 0;
+    for(i = 1; i <= 100; i++) {
+        sum = sum + i;
+    }
+    printf("Sum %d", sum);
+
+return 0;
+}*/
+
+/*#include <stdio.h>
+
+int main() {
+    int term, sum = 0, a = 2;
+    for (term = 1; term <= 10; term++) {
+        sum = sum + a;
+        a = a + 3;
+    }
+    printf("Sum %d", sum);
+
+return 0;
+}*/
+
+/*#include <stdio.h>
+
+int main() {
+    float sum = 0.0, fact;
+    int limit, num;
+    printf("Enter your limit: ");
+    scanf("%d", &limit);
+
+    while(num <= limit) {
+        fact = 1;
+        for(int i = 1; i <= num; i++) {
+            fact = fact * i;
+        }
+
+        sum = sum + (num / fact);
+        num++;
+    }
+    printf("Sum is %f", sum);
+
+return 0;
+}*/
