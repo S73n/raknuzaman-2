@@ -803,3 +803,42 @@ int main() {
 
 return 0;
 }*/
+
+/*#include <stdio.h>
+
+int main() {
+    int A[2] [2] = { {10, 20}, {5, 9}};
+
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 2; j++) {
+            printf("%d ", A[i] [j]);
+        }
+        printf("\n");
+    }
+
+return 0;
+}*/
+
+/*#include <stdio.h>
+
+int main() {
+    int A[2][2];
+    printf("Enter your numbers: \n");
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 2; j++) {
+            printf("%A [%d] [%d] = ", i, j);
+            scanf("%d", &A [i] [j]);
+        }
+    }
+    printf("Matrix is: \n");
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 2; j++) {
+            printf("%d ", A [i] [j]);
+        }
+        printf("\n");
+    }
+
+return 0;
+}*/
+
+
